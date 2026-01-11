@@ -30,6 +30,28 @@
         <div class="row"><span>Соперник</span><b>—</b></div>
         <div class="row"><span>Арена</span><b>—</b></div>
       </section>
+
+      <!-- Таблица -->
+      <section class="card" id="standingsCard">
+        <div class="card-title">Таблица</div>
+
+        <div class="standings-head">
+          <div>
+            <div class="standings-title" id="stTitle">Турнирное положение</div>
+            <div class="standings-sub" id="stSub">Групповой этап</div>
+          </div>
+          <div class="standings-upd" id="stUpd">—</div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="tbl" id="standingsTable">
+            <thead>
+              <tr id="stCols"></tr>
+            </thead>
+            <tbody id="stRows"></tbody>
+          </table>
+        </div>
+      </section>
     </main>
 
     <footer class="tabs">
@@ -39,5 +61,9 @@
       <button class="tab">Стата</button>
     </footer>
   </div>
+
+  <!-- Подключаем JS, который загрузит data/standings.json и нарисует таблицу -->
+  <script src="app.js"></script>
 </body>
 </html>
+
