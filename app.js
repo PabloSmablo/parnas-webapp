@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const el = document.getElementById("stUpd");
+  if (el) el.textContent = "DEBUG: JS loaded";
+});
+
 async function loadJSON(path) {
   const res = await fetch(path + "?v=" + Date.now());
   if (!res.ok) throw new Error("Failed to load " + path);
@@ -74,3 +79,4 @@ renderStandings().catch(err => {
     card.innerHTML = `<div class="card-title">Таблица</div><div>Ошибка загрузки таблицы</div>`;
   }
 });
+
