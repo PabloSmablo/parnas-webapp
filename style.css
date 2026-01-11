@@ -121,3 +121,55 @@ body{
   border-color: rgba(82,199,255,0.35);
   box-shadow: 0 0 0 2px rgba(82,199,255,0.10) inset;
 }
+
+.standings-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:12px;
+  margin-bottom:10px;
+}
+.standings-title{ font-weight:800; }
+.standings-sub{ color: var(--muted); font-size: 13px; margin-top: 2px; }
+.standings-upd{ color: var(--muted); font-size: 12px; white-space: nowrap; }
+
+.table-wrap{
+  overflow-x:auto;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.tbl{
+  width:100%;
+  border-collapse: collapse;
+  background: rgba(0,0,0,0.15);
+  min-width: 900px; /* важно: у тебя много колонок 1..13 + статы */
+}
+
+.tbl th, .tbl td{
+  padding: 10px 10px;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  font-size: 13px;
+}
+
+.tbl th{
+  color: var(--muted);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  background: rgba(255,255,255,0.03);
+}
+
+.tbl td.team{
+  text-align: left;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.tbl tr.myteam{
+  outline: 1px solid rgba(82,199,255,0.35);
+  background: rgba(82,199,255,0.08);
+}
+
+
